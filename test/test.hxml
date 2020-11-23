@@ -1,0 +1,24 @@
+## Neko
+-lib munit
+-lib lua
+-lib hare
+-lib minject:2.0.0-rc.1
+-cp src
+-cp test
+-main TestMain
+-neko build/neko_test.n
+
+--next
+
+## CPP
+-lib munit
+-lib lua
+-lib hare
+-lib minject:2.0.0-rc.1
+-cp src
+-cp test
+-main TestMain
+#-D HXCPP_M64
+-cpp build/cpp_test
+
+

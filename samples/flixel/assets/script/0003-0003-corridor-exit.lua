@@ -1,0 +1,1 @@
+movement.teleportPlayer(2, 26, 15)

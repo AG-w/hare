@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="10" tilewidth="32" tileheight="32" nextobjectid="7">
+ <tileset firstgid="1" name="Office_A5_Ground" tilewidth="32" tileheight="32">
+  <image source="../images/Office_A5_Ground.png" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="wall" tilewidth="32" tileheight="32">
+  <image source="../images/wall.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="23" name="expandedAutotile" tilewidth="32" tileheight="32">
+  <image source="../images/expandedAutotile.png" width="256" height="192"/>
+  <terraintypes>
+   <terrain name="Void" tile="-1"/>
+  </terraintypes>
+ </tileset>
+ <tileset firstgid="71" name="passage" tilewidth="32" tileheight="32">
+  <image source="../images/passage.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="87" name="Office-B" tilewidth="32" tileheight="32">
+  <image source="../images/Office-B.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Walls and Floor" width="15" height="10">
+  <properties>
+   <property name="type" value="floor"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgkAZiYxKwPAMC6AOxEAlYHU2vKAkYXS8vCXio65UEYm0SsATDwAIARMEKYw==
+  </data>
+ </layer>
+ <layer name="Below" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4D6AAACWAAB
+  </data>
+ </layer>
+ <layer name="Above" width="15" height="10" opacity="0.5">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4D6AAACWAAB
+  </data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="3" type="event" gid="18" x="64" y="192">
+   <properties>
+    <property name="trigger" value="overlap"/>
+   </properties>
+  </object>
+  <object id="6" type="event" gid="316" x="320" y="160"/>
+ </objectgroup>
+ <layer name="Passage" width="15" height="10" opacity="0.5">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhYEEgCRgZBJNoTMMT1goA/CXigAQApUQlp
+  </data>
+ </layer>
+</map>

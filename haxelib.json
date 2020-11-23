@@ -1,0 +1,16 @@
+{
+  "name": "hare", 
+  "url" : "http://www.kevinresol.com",  
+  "license": "MIT",  
+  "tags": ["game", "cross"],
+  "description": "Haxe RPG Engine",
+  "version": "0.0.1",
+  "releasenote": "Work in Progress",
+  "contributors": ["KevinResoL"],
+  "dependencies": {
+    "minject":"2.0.0-rc.1",
+    "hxlua":"",
+    "openfl":"",
+    "flixel":""
+  }
+}

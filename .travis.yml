@@ -1,0 +1,20 @@
+language: haxe
+haxe:
+  - "3.2.0"
+  - "3.2.1"
+#  - development
+neko: "2.0.0"
+addons:
+  apt:
+    packages:
+    - gcc-multilib
+install:
+  - yes | haxelib git hxcpp https://github.com/HaxeFoundation/hxcpp
+  - yes | haxelib git lua https://github.com/kevinresol/hx-lua
+  - yes | haxelib git flixel https://github.com/HaxeFlixel/flixel
+  - yes | haxelib install hscript
+  - yes | haxelib install munit
+  - yes | haxelib install minject 2.0.0-rc.1
+  - haxelib list
+before_script: chmod a+x test.sh
+script: ./test.sh

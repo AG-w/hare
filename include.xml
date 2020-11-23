@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<assets path="assets/impl" include="*" rename="assets" />
+	<haxelib name="hxlua"/>
+	<haxedef name="hscriptPos"/>
+	
+</project>
