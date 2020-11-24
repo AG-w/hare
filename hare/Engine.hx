@@ -307,7 +307,7 @@ class Engine
 					switch (action) 
 					{
 						case AShowMainMenu:
-							set_gameState(MainMenu);
+							set_gameState(SMainMenu);
 						case AShowSaveMenu:
 							set_gameState(SSaveScreen);
 						case AShowLoadMenu:
