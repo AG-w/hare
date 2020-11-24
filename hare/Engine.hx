@@ -293,13 +293,13 @@ class Engine
 			case SMainMenu:
 				music.saveBackgroundMusic();
 				mapManager.currentMap = null;
-				system.showMainMenu(startGame, function() gameState = SLoadScreen);
+				system.showMainMenu(startGame, function() set_gameState(SLoadScreen));
 				
 			case SLoadScreen:
-				system.showLoadScreen(loadGame, function() gameState = currentState, saveManager.displayData);
+				system.showLoadScreen(loadGame, function() set_gameState(currentState), saveManager.displayData);
 				
 			case SSaveScreen:
-				system.showSaveScreen(saveGame, function() gameState = currentState, saveManager.displayData);
+				system.showSaveScreen(saveGame, function() set_gameState(currentState), saveManager.displayData);
 				
 			case SGameMenu:
 				system.showGameMenu(function(action)
@@ -307,13 +307,13 @@ class Engine
 					switch (action) 
 					{
 						case AShowMainMenu:
-							gameState = SMainMenu;
+							set_gameState(MainMenu);
 						case AShowSaveMenu:
-							gameState = SSaveScreen;
+							set_gameState(SSaveScreen);
 						case AShowLoadMenu:
-							gameState = SLoadScreen;
+							set_gameState(SLoadScreen);
 					}
-				}, function() gameState = currentState);
+				}, function() set_gameState(currentState));
 				
 			default:
 				
